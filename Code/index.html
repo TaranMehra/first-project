@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO</title>
+
+    <style>* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  color: #fff;
+  background-color: #2b2828ed;
+  width: 100%;
+  height: 100%;
+}
+
+.model-div {
+  color: orange;
+  background-color: #474545;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#model-div-canvas {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-container-div {
+  background-color: #0000;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.page-container-div::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  background-color: #7fffd4;
+  width: .5vw;
+  display: none;
+}
+
+.page-container-div::-webkit-scrollbar-track-piece {
+  background-color: red;
+}
+
+.page-container-div::-webkit-scrollbar-thumb {
+  background-color: #0b133b;
+  max-height: 2px;
+}
+
+.pages {
+  background-color: #0000;
+}
+
+.page-container-one, .page-container-two, .page-container-three {
+  height: 100vh;
+}
+</style>
+</head>
+<body>
+    <div class="main-container"> 
+        <div class="model-div">
+            <canvas id="model-div-canvas"><p>IS that the canvas</p></canvas>
+        </div>
+        <div class="page-container-div">
+            <div class="pages page-container-one"><h1>one page</h1></div>
+            <div class="pages page-container-two"><h1>two page</h1></div>
+            <div class="pages page-container-three"><h1>three page</h1></div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body> 
+</html>
